@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        nav {
+            height: 15vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #487464;
+        }
+
+        nav h4 {
+            margin: 10vw;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav h4:hover a {
+            text-decoration: underline;
+        }
+        #main{
+            background-color: #000;
+            height: 140vh;
+            width: 100vw;
+        }
+
+
+        table {
+            height: 120vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        table td {
+            border: 1px solid #000;
+            border-radius: 8px;
+            padding: 6px;
+            gap: 5px;
+            color: #fff;
+        }
+        td h3,h6 {
+            text-align: center;
+        }
+        #non-metal {
+            background-color: #03263d;
+        }
+        #non-metal:hover{
+            cursor: pointer;
+        }
+
+        #nobal-gas {
+            background-color: #4d1233;
+        }
+        #nobal-gas:hover {
+            cursor: pointer;
+        }
+
+        #alkaline-earth-metal {
+            background-color: #673150;
+        }
+        #alkaline-earth-metal:hover{
+            cursor: pointer;
+        }
+
+        #alkali-metal {
+            background-color: #445870;
+        }
+        #metalloid {
+            background-color: #3d4808;
+        }
+
+        #transition-metals {
+            background-color: #194b43;
+        }
+
+        #transition {
+            background-color: #694b75;
+        }
+
+        #Lanthanum {
+            background-color: #3247cf;
+        }
+
+        #Actinium {
+            background-color: #442d30;
+        }
+
+        #unknown {
+            background-color: #4d4949;
+        }
+        #alkali-metal,#transition-metals,#transition,#unknown,#Lanthanum,#metalloid:hover{
+            cursor: pointer;
+        }
+
+        #empty {
+            border: none;
+        }
+        h1{
+            padding: 20px;
+            color: #487464;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <h4><a href="https://www.facebook.com/profile.php?id=100045829637562" target="_blank"><i
+                    class="fa-brands fa-square-facebook"></i> facebook</a></h4>
+        <h4><a href="https://www.instagram.com/syedabdullah763/" target="_blank"><i class="fa-brands fa-instagram"></i>
+                Instagram</a></h4>
+        <h4><a href="mailto:syed.abdullah7638@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i>
+                syed.abdullah7638@gmail.com</a></h4>
+    </nav>
+
+    <div id="main">
+
+        <h1>Periodic Table</h1>
+
+            <table>
+
+                <!-- row 1 -->
+                <tr>
+                    <td id="non-metal">
+                        <sup>1</sup>
+                        <h3>H</h3>
+                        <h6>Hydrogen</h6>
+                    </td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="nobal-gas">
+                        <sup>2</sup>
+                        <h3>He</h3>
+                        <h6>Helium</h6>
+                    </td>
+                </tr>
+
+                <!-- row 2 -->
+                <tr>
+                    <td id="alkali-metal">
+                        <sup>3</sup>
+                        <h3>Li</h3>
+                        <h6>Lithium</h6>
+                    </td>
+                    <td id="alkaline-earth-metal">
+                        <sup>2</sup>
+                        <h3>Be</h3>
+                        <h6>Baryllium</h6>
+                    </td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="metalloid">
+                        <sup>5</sup>
+                        <h3>B</h3>
+                        <h6>Boron</h6>
+                    </td>
+                    <td id="non-metal">
+                        <sup>6</sup>
+                        <h3>C</h3>
+                        <h6>Carbon</h6>
+                    </td>
+                    <td id="non-metal">
+                        <sup>7</sup>
+                        <h3>N</h3>
+                        <h6>Nitrogen</h6>
+                    </td>
+                    <td id="non-metal">
+                        <sup>6</sup>
+                        <h3>O</h3>
+                        <h6>Oxygen</h6>
+                    </td>
+                    <td id="non-metal">
+                        <sup>9</sup>
+                        <h3>F</h3>
+                        <h6>Flourine</h6>
+                    </td>
+                    <td id="nobal-gas">
+                        <sup>10</sup>
+                        <h3>Ne</h3>
+                        <h6>Neon</h6>
+                    </td>
+                </tr>
+
+                <!-- row 3 -->
+                <tr>
+                    <td id="alkali-metal">
+                        <sup>11</sup>
+                        <h3>Na</h3>
+                        <h6>Sodium</h6>
+                    </td>
+                    <td id="alkaline-earth-metal">
+                        <sup>12</sup>
+                        <h3>Mg</h3>
+                        <h6>Magnesium</h6>
+                    </td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="transition-metals">
+                        <sup>13</sup>
+                        <h3>Al</h3>
+                        <h6>Aluminium</h6>
+                    </td>
+                    <td id="metalloid">
+                        <sup>14</sup>
+                        <h3>Si</h3>
+                        <h6>Silicon</h6>
+                    </td>
+                    <td id="non-metal">
+                        <sup>15</sup>
+                        <h3>P</h3>
+                        <h6>Phosphorus</h6>
+                    </td>
+                    <td id="non-metal">
+                        <sup>16</sup>
+                        <h3>S</h3>
+                        <h6>Sulfur</h6>
+                    </td>
+                    <td id="non-metal">
+                        <sup>17</sup>
+                        <h3>Cl</h3>
+                        <h6>Chlorine</h6>
+                    </td>
+                    <td id="nobal-gas">
+                        <sup>18</sup>
+                        <h3>Ar</h3>
+                        <h6>Argon</h6>
+                    </td>
+                </tr>
+
+
+                <!-- row 4 -->
+                <tr>
+                    <td id="alkali-metal">
+                        <sup>19</sup>
+                        <h3>K</h3>
+                        <h6>Potassium</h6>
+                    </td>
+                    <td id="alkaline-earth-metal">
+                        <sup>12</sup>
+                        <h3>Ca</h3>
+                        <h6>Calcium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>21</sup>
+                        <h3>Sc</h3>
+                        <h6>Scandium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>22</sup>
+                        <h3>Ti</h3>
+                        <h6>Titanium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>23</sup>
+                        <h3>V</h3>
+                        <h6>Vanadium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>24</sup>
+                        <h3>Cr</h3>
+                        <h6>Chromium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>25</sup>
+                        <h3>Mn</h3>
+                        <h6>Manganese</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>26</sup>
+                        <h3>Fe</h3>
+                        <h6>Iron</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>27</sup>
+                        <h3>Co</h3>
+                        <h6>Cobalt</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>28</sup>
+                        <h3>Ni</h3>
+                        <h6>Nickel</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>29</sup>
+                        <h3>Cu</h3>
+                        <h6>Copper</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>30</sup>
+                        <h3>Zn</h3>
+                        <h6>Zinc</h6>
+                    </td>
+                    <td id="transition-metals">
+                        <sup>31</sup>
+                        <h3>Ga</h3>
+                        <h6>Gallium</h6>
+                    </td>
+                    <td id="metalloid">
+                        <sup>32</sup>
+                        <h3>Ge</h3>
+                        <h6>Germanium</h6>
+                    </td>
+                    <td id="metalloid">
+                        <sup>33</sup>
+                        <h3>As</h3>
+                        <h6>Arsenic</h6>
+                    </td>
+                    <td id="non-metal">
+                        <sup>34</sup>
+                        <h3>Se</h3>
+                        <h6>Selenium</h6>
+                    </td>
+                    <td id="non-metal">
+                        <sup>35</sup>
+                        <h3>Br</h3>
+                        <h6>Bromine</h6>
+                    </td>
+                    <td id="nobal-gas">
+                        <sup>36</sup>
+                        <h3>Kr</h3>
+                        <h6>Krypton</h6>
+                    </td>
+                </tr>
+
+
+                <!-- row 5 -->
+                <tr>
+                    <td id="alkali-metal">
+                        <sup>37</sup>
+                        <h3>Rb</h3>
+                        <h6>Rubidium</h6>
+                    </td>
+                    <td id="alkaline-earth-metal">
+                        <sup>38</sup>
+                        <h3>Sr</h3>
+                        <h6>Strontium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>39</sup>
+                        <h3>Y</h3>
+                        <h6>Yttrium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>40</sup>
+                        <h3>Zr</h3>
+                        <h6>Zirconium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>41</sup>
+                        <h3>Nb</h3>
+                        <h6>Niobium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>42</sup>
+                        <h3>Mo</h3>
+                        <h6>Molybdenum</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>43</sup>
+                        <h3>Tc</h3>
+                        <h6>Technetium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>44</sup>
+                        <h3>Ru</h3>
+                        <h6>Ruthenium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>45</sup>
+                        <h3>Rh</h3>
+                        <h6>Rhodium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>46</sup>
+                        <h3>Pb</h3>
+                        <h6>Palladium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>47</sup>
+                        <h3>Ag</h3>
+                        <h6>Silver</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>48</sup>
+                        <h3>Cd</h3>
+                        <h6>Cadmium</h6>
+                    </td>
+                    <td id="transition-metals">
+                        <sup>49</sup>
+                        <h3>In</h3>
+                        <h6>Indium</h6>
+                    </td>
+                    <td id="transition-metals">
+                        <sup>50</sup>
+                        <h3>Sn</h3>
+                        <h6>Tin</h6>
+                    </td>
+                    <td id="metalloid">
+                        <sup>51</sup>
+                        <h3>Sb</h3>
+                        <h6>Antimony</h6>
+                    </td>
+                    <td id="metalloid">
+                        <sup>52</sup>
+                        <h3>Te</h3>
+                        <h6>Tellurium</h6>
+                    </td>
+                    <td id="non-metal">
+                        <sup>53</sup>
+                        <h3>I</h3>
+                        <h6>Iodine</h6>
+                    </td>
+                    <td id="nobal-gas">
+                        <sup>36</sup>
+                        <h3>Kr</h3>
+                        <h6>Krypton</h6>
+                    </td>
+                </tr>
+
+
+                <!-- row 6 -->
+                <tr>
+                    <td id="alkali-metal">
+                        <sup>55</sup>
+                        <h3>Cs</h3>
+                        <h6>Caesium</h6>
+                    </td>
+                    <td id="alkaline-earth-metal">
+                        <sup>56</sup>
+                        <h3>Ba</h3>
+                        <h6>Barium</h6>
+                    </td>
+                    <td id="Lanthanum">
+                        <sup>57</sup>
+                        <h3>La</h3>
+                        <h6>Lanthanum</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>72</sup>
+                        <h3>Hf</h3>
+                        <h6>Hafnium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>73</sup>
+                        <h3>Ta</h3>
+                        <h6>Tantalum</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>74</sup>
+                        <h3>W</h3>
+                        <h6>Tungsten</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>75</sup>
+                        <h3>Re</h3>
+                        <h6>Rhenium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>76</sup>
+                        <h3>Os</h3>
+                        <h6>Osmium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>77</sup>
+                        <h3>Ir</h3>
+                        <h6>Iridium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>78</sup>
+                        <h3>Pt</h3>
+                        <h6>Platinum</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>79</sup>
+                        <h3>Au</h3>
+                        <h6>Gold</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>80</sup>
+                        <h3>Hg</h3>
+                        <h6>Mercury</h6>
+                    </td>
+                    <td id="transition-metals">
+                        <sup>81</sup>
+                        <h3>Tl</h3>
+                        <h6>Thallium</h6>
+                    </td>
+                    <td id="transition-metals">
+                        <sup>82</sup>
+                        <h3>Pb</h3>
+                        <h6>Lead</h6>
+                    </td>
+                    <td id="transition-metals">
+                        <sup>83</sup>
+                        <h3>Bi</h3>
+                        <h6>Bismuth</h6>
+                    </td>
+                    <td id="transition-metals">
+                        <sup>84</sup>
+                        <h3>Po</h3>
+                        <h6>Polonium</h6>
+                    </td>
+                    <td id="transition-metals">
+                        <sup>85</sup>
+                        <h3>At</h3>
+                        <h6>Astatine</h6>
+                    </td>
+                    <td id="nobal-gas">
+                        <sup>86</sup>
+                        <h3>Rn</h3>
+                        <h6>Radon</h6>
+                    </td>
+                </tr>
+
+
+
+                <!-- row 7 -->
+                <tr>
+                    <td id="alkali-metal">
+                        <sup>87</sup>
+                        <h3>Fr</h3>
+                        <h6>Francium</h6>
+                    </td>
+                    <td id="alkaline-earth-metal">
+                        <sup>88</sup>
+                        <h3>Ra</h3>
+                        <h6>Radium</h6>
+                    </td>
+                    <td id="Actinium">
+                        <sup>89</sup>
+                        <h3>Ac</h3>
+                        <h6>Actinium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>104</sup>
+                        <h3>Rf</h3>
+                        <h6>Rutherfordium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>105</sup>
+                        <h3>Db</h3>
+                        <h6>Dubnium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>106</sup>
+                        <h3>Sg</h3>
+                        <h6>Seaborgium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>107</sup>
+                        <h3>Bh</h3>
+                        <h6>Bohrium</h6>
+                    </td>
+                    <td id="transition">
+                        <sup>108</sup>
+                        <h3>Hs</h3>
+                        <h6>Hassium</h6>
+                    </td>
+                    <td id="unknown">
+                        <sup>109</sup>
+                        <h3>Mt</h3>
+                        <h6>Meitnerium</h6>
+                    </td>
+                    <td id="unknown">
+                        <sup>110</sup>
+                        <h3>Ds</h3>
+                        <h6>Darmstadtium</h6>
+                    </td>
+                    <td id="unknown">
+                        <sup>111</sup>
+                        <h3>Rg</h3>
+                        <h6>Roentgenium</h6>
+                    </td>
+                    <td id="unknown">
+                        <sup>112</sup>
+                        <h3>Cn</h3>
+                        <h6>Copernicium</h6>
+                    </td>
+                    <td id="unknown">
+                        <sup>113</sup>
+                        <h3>Nh</h3>
+                        <h6>Nihonium</h6>
+                    </td>
+                    <td id="unknown">
+                        <sup>114</sup>
+                        <h3>Fl</h3>
+                        <h6>Flerovium</h6>
+                    </td>
+                    <td id="unknown">
+                        <sup>115</sup>
+                        <h3>Mc</h3>
+                        <h6>Moscovium</h6>
+                    </td>
+                    <td id="unknown">
+                        <sup>116</sup>
+                        <h3>Lv</h3>
+                        <h6>Livermorium</h6>
+                    </td>
+                    <td id="unknown">
+                        <sup>117</sup>
+                        <h3>Ts</h3>
+                        <h6>Tennessine</h6>
+                    </td>
+                    <td id="unknown">
+                        <sup>118</sup>
+                        <h3>Og</h3>
+                        <h6>Oganesson</h6>
+                    </td>
+                </tr>
+
+                <!-- row empty -->
+                 <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                 </tr>
+
+                 <!-- empty -->
+                 <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                 </tr>
+
+                <!-- row 8 -->
+                 <tr>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                    <td id="Lanthanum">
+                        <sup>58</sup>
+                        <h3>Ce</h3>
+                        <h6>Cerium</h6>
+                    </td>
+                    <td id="Lanthanum">
+                        <sup>59</sup>
+                        <h3>Pr</h3>
+                        <h6>Praseodymium</h6>
+                    </td>
+                    <td id="Lanthanum">
+                        <sup>60</sup>
+                        <h3>Nd</h3>
+                        <h6>Neodymium</h6>
+                    </td>
+                    <td id="Lanthanum">
+                        <sup>61</sup>
+                        <h3>Pm</h3>
+                        <h6>Promethium</h6>
+                    </td>
+                    <td id="Lanthanum">
+                        <sup>62</sup>
+                        <h3>Sm</h3>
+                        <h6>Samarium</h6>
+                    </td>
+                    <td id="Lanthanum">
+                        <sup>63</sup>
+                        <h3>Eu</h3>
+                        <h6>Europium</h6>
+                    </td>
+                    <td id="Lanthanum">
+                        <sup>64</sup>
+                        <h3>Gd</h3>
+                        <h6>Gadolinium</h6>
+                    </td>
+                    <td id="Lanthanum">
+                        <sup>65</sup>
+                        <h3>Tb</h3>
+                        <h6>Terbium</h6>
+                    </td>
+                    <td id="Lanthanum">
+                        <sup>66</sup>
+                        <h3>Dy</h3>
+                        <h6>Dysprosium</h6>
+                    </td>
+                    <td id="Lanthanum">
+                        <sup>67</sup>
+                        <h3>Ho</h3>
+                        <h6>Holmium</h6>
+                    </td>
+                    <td id="Lanthanum">
+                        <sup>68</sup>
+                        <h3>Er</h3>
+                        <h6>Erbium</h6>
+                    </td>
+                    <td id="Lanthanum">
+                        <sup>69</sup>
+                        <h3>Tm</h3>
+                        <h6>Thulium</h6>
+                    </td>
+                    <td id="Lanthanum">
+                        <sup>70</sup>
+                        <h3>Yb</h3>
+                        <h6>Ytterbium</h6>
+                    </td>
+                    <td id="Lanthanum">
+                        <sup>71</sup>
+                        <h3>Lu</h3>
+                        <h6>Lutetium</h6>
+                    </td>
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+                 </tr>
+
+                 <!-- row 9 -->
+                  <tr>
+
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+
+                    <td id="Actinium">
+                        <sup>90</sup>
+                        <h3>Th</h3>
+                        <h6>Thorium</h6>
+                    </td>
+                    <td id="Actinium">
+                        <sup>91</sup>
+                        <h3>Pa</h3>
+                        <h6>Protactinium</h6>
+                    </td>
+                    <td id="Actinium">
+                        <sup>92</sup>
+                        <h3>U</h3>
+                        <h6>Uranium</h6>
+                    </td>
+                    <td id="Actinium">
+                        <sup>93</sup>
+                        <h3>Np</h3>
+                        <h6>Neptunium</h6>
+                    </td>
+                    <td id="Actinium">
+                        <sup>94</sup>
+                        <h3>Pu</h3>
+                        <h6>Plutonium</h6>
+                    </td>
+                    <td id="Actinium">
+                        <sup>95</sup>
+                        <h3>Am</h3>
+                        <h6>Americium</h6>
+                    </td>
+                    <td id="Actinium">
+                        <sup>96</sup>
+                        <h3>Cm</h3>
+                        <h6>Curium</h6>
+                    </td>
+                    <td id="Actinium">
+                        <sup>97</sup>
+                        <h3>Bk</h3>
+                        <h6>Berkelium</h6>
+                    </td>
+                    <td id="Actinium">
+                        <sup>98</sup>
+                        <h3>Cf</h3>
+                        <h6>Californium</h6>
+                    </td>
+                    <td id="Actinium">
+                        <sup>99</sup>
+                        <h3>Es</h3>
+                        <h6>Californium</h6>
+                    </td>
+                    <td id="Actinium">
+                        <sup>100</sup>
+                        <h3>Fm</h3>
+                        <h6>Fermium</h6>
+                    </td>
+                    <td id="Actinium">
+                        <sup>101</sup>
+                        <h3>Md</h3>
+                        <h6>Mendelevium</h6>
+                    </td>
+                    <td id="Actinium">
+                        <sup>102</sup>
+                        <h3>No</h3>
+                        <h6>Nobelium</h6>
+                    </td>
+                    <td id="Actinium">
+                        <sup>103</sup>
+                        <h3>Lr</h3>
+                        <h6>Lawrencium</h6>
+                    </td>
+
+                    <td id="empty"></td>
+                    <td id="empty"></td>
+
+                  </tr>
+            </table>
+
+    </div>
+
+
+
+</body>
+
+</html>
