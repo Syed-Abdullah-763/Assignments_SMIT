@@ -67,7 +67,6 @@ header {
     height: 150vh;
     width: 100%;
     position: relative;
-    background: linear-gradient(180deg, #ffffff 0%, #eeebff 69.79%, #ebe8ff 99.99%, #e1deff 100%);
 }
 
 #page1 .center {
@@ -86,10 +85,6 @@ header {
     font-size: 80px;
     text-align: center;
     color: transparent;
-    background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 #page1 .center h1 span {
@@ -123,11 +118,6 @@ header {
     width: 100%;
     border: none;
     padding: 0px 10px;
-}
-
-#page1 .center .search input::placeholder {
-    font-weight: 400;
-    font-size: 15px;
 }
 
 #page1 .center .search img {
@@ -261,16 +251,9 @@ header {
     padding: 25px;
     border: 1px solid #ffffff;
     border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     cursor: pointer;
     text-align: center;
-    background-image: linear-gradient(180deg, #edebff, hsla(0, 0%, 100%, 0));
     transition: all .3s ease;
-
-
-    &:hover {
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 10px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    }
 }
 
 #page2 .cards .card h3 {
@@ -343,16 +326,9 @@ header {
     padding: 25px;
     border: 1px solid #ffffff;
     border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 10px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     cursor: pointer;
     text-align: center;
-    background-image: linear-gradient(180deg, #edebff, hsla(0, 0%, 100%, 0));
     transition: all .3s ease;
-
-
-    &:hover {
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    }
 }
 
 #page4 .cards .card h3 {
@@ -402,7 +378,6 @@ header {
     padding: 25px;
     border: 1px solid #ffffff;
     border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     cursor: pointer;
     position: relative;
 }
@@ -512,7 +487,6 @@ header {
 footer {
     height: 70vh;
     width: 100%;
-    background-image: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%);
 }
 #footer {
     padding-top: 25px;
